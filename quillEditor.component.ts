@@ -16,16 +16,13 @@ import RangeStatic = Quill.RangeStatic;
 import DeltaStatic = Quill.DeltaStatic;
 import Sources = Quill.Sources;
 import QuillType = Quill.Quill;
-const Quill = require('quill');
+import * as Quill from 'quill';
 
 @Component({
   selector: 'quill-editor',
   template: `<div class="quill-editor"></div>`,
   styleUrls: [
-    './quillEditor.component.css',
-    '../quill/dist/quill.core.css',
-    '../quill/dist/quill.snow.css',
-    '../quill/dist/quill.bubble.css'
+    './quillEditor.component.scss',
   ],
   providers: [{
     provide: NG_VALUE_ACCESSOR,
